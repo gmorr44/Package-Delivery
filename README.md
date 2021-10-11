@@ -1,11 +1,11 @@
-# Package-Delivery
-The package delivery program was built as a project for my "Data Structures and Algorithms-2" computer science class. This project is a variant of the traveling salesperson problem set up as a package delivery company trying to optimize the mileage of it's deliveries. Using object-oriented design principles, I was required to build a program to model the delivery of the company's packages. I was given a .csv list of 40 packages and their distance data. These 40 packages would need to be delivered as optimally as possible by the end of the day. This task required the use of a self-adjusting heuristic algorithm, and a hashtable to keep the program scaleable and efficient. The following list outlines the delivery program's objectives and constraints.
-
-1.   There are 3 delivery trucks and only 2 delivery drivers. Only 2 Trucks can deliver at a time.
-2.   The truck's average speed is 18 MPH. Stop time(fueling and traffic) is calculated into the average speed.
-3.  The delivery day starts no sooner than 8:00 am. The trucks cannot leave before this start time.
-4.  Loading the truck's payload happens instantaneously. This is calculated into the average speed mentioned above.
-5.  Each package delivery constraint must be followed according to the PackageData.csv file.
-Example constraints are the following:(Must be delivered on specific truck, Cannot leave delivery hub until specified time, and Must be delivered with another package.)
-6.  The distance data between addresses is provided in the PackageDistance.csv file.
-7. The day ends when all of the packages have been delivered.
+# Package Delivery Application
+## Project Objectives
+1. Model the delivery scenario using Python object-oriented principles.
+1. Import CSV files into the program as useable package and distance data.
+1. Implement a hash table data structure that stores the package data to allow efficient data retrieval and future scalability.
+1. Use a self-adjusting heuristic algorithm to plan the delivery routes and reduce the mileage of the delivery trucks.
+## Technologies Used
+1. Written in Python
+1. PyCharm IDE
+## Description
+The objective of this program is to deliver 40 packages throughout a city within specified time and distance constraints. The program utilized a hash table data structure for storing the package data. Using the hash table allowed the main algorithm to access package data in O[1] time complexity. The program provides a console user interface which allows the user to view which delivery truck delivered each package at the end of the day. The interface also allows searching for a specific package's status at a specific time during the day.
